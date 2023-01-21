@@ -1,0 +1,25 @@
+#title{
+    text-shadow: 1px 1px 10px black;
+    color: yellow;
+    font-family:'Lucida Calligraphy';
+}
+body{
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: arial;
+}
+#pic{
+    width: 80px
+}
+#camera{
+    width: 350px;
+    box-shadow: 1px 1px 20px black;
+    height: 250px;
+}
+h6{
+    position: fixed;
+    width: 50%;
+    bottom: 1px;
+    color: red;
+}
