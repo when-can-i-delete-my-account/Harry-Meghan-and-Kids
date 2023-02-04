@@ -15,11 +15,16 @@ body{
 #camera{
     width: 350px;
     box-shadow: 1px 1px 20px black;
-    height: 250px;
+    height: 300px;
 }
 h6{
     position: fixed;
     width: 50%;
     bottom: 1px;
-    color: red;
+    color: yellow;
+    background-color: blue;
+}
+p{
+    color:turquoise;
+    background-color: black;
 }

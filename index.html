@@ -1,23 +1,47 @@
+  
 <html>
-<link rel="stylesheet" href="style.css">
-
+  
 <head>
-    <title>Prince, Meghan and Kids</title>
+  <title>Harry, Meghan and Kids</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body background="house.png">
-    <h1 id="title">Harry, Meghan and Kids</h1><br>
-    <center><span><img id="pic" src="harry.png"><img id="pic" src="archie.png">
-            <img id="pic" src="lilibet.png"><img id="pic" src="meghan.png"></span>
-        <br>
-        <h3>These are the faces AI will recognise.</h3>
-        <br>
-        <div id="camera"></div>
-        <br>
-        <button onclick="capture()">Capture</button>
-        <button onclick="identify()">Identify</button>
-    </center>
-    <h6>Copyright © Nihal Kompalli. All photos go to their respective owners.</h6>
-</body>
+<div class="container">
+  
+  <center>
+  <h3 id="title">Harry, Meghan and Kids</h3>
+    <br><br>
 
+    <p style="font-size: 22px;">Model is trained to identify the following royals: </p>
+    
+    <span><img id="pic" src="harry.png"><img id="pic" src="meghan.png"><img id="pic" src="archie.png"><img id="pic" src="lilibet.png"></span>
+    <div id="camera"></div>
+    <br><br>
+    <div id="result"></div>
+    <br><br>
+    <button onclick="take_snapshot();" id="capture">Capture Image</button>
+    <br><br>
+    <button onclick="check();" id="identify">Identify Image</button>
+    <br><br>
+
+    <p style="font-size: 22px;">Object :  <span id="result_object_name"></span></p>
+    <p style="font-size: 22px;">Accuracy : <span id="result_object_accuracy"></span> </p>
+  </center>
+
+</div>
+<script src="main.js"></script>
+<h6><b>Copyright © Nihal Kompalli 2023. All images belong to their respective owners.</b></h6>
+
+</body>
 </html>
+
